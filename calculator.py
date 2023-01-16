@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 import datetime
 from datetime import timedelta
+import sys
+
+
 
 # Execute from terminal type the command below
 # python calculator.py
@@ -117,7 +120,8 @@ def sum_costs(data):
 
 if __name__ == "__main__":
     
-    path='./homework_v3/generated_sample_2.csv'
+    #path='./homework_v3/generated_sample_2.csv'
+    path = sys.argv[-1]
     data_original=read_file(path)
     data=define_tarifs(data_original)
     data=calculate_cost_discounted_to_main_rate(data_original)
