@@ -7,7 +7,7 @@ import sys
 
 
 # Execute from terminal type the command below
-# python calculator.py
+# python calculator.py ./homework_v3/generated_sample_2.csv
 
 def read_file(path):
     data=pd.read_csv(path, names=['Number', 'Start', 'End'])
