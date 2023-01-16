@@ -4,10 +4,11 @@ import datetime
 from datetime import timedelta
 import sys
 
-
-
-# Execute via terminalcmd, type the command below:
+# Execute via terminal cmd, type the command below:
 # python calculator.py ./homework_v3/generated_sample_2.csv
+
+# Expected output:
+# Sum of cost: 659.2
 
 def read_file(path):
     data=pd.read_csv(path, names=['Number', 'Start', 'End'])
