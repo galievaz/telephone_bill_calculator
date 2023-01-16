@@ -6,7 +6,7 @@ import sys
 
 
 
-# Execute from terminal type the command below
+# Execute via terminalcmd, type the command below:
 # python calculator.py ./homework_v3/generated_sample_2.csv
 
 def read_file(path):
@@ -18,9 +18,9 @@ def read_file(path):
     return data
     
 def find_frequent_number(data):
-    fav_number=int(data['Number'].mode())
-    fav_number_rows=data[data['Number']==fav_number]
-    for i in fav_number_rows.index:
+    freq_number=int(data['Number'].mode())
+    freq_number_rows=data[data['Number']==freq_number]
+    for i in freq_number_rows.index:
         data.loc[i, 'Cost']=0
     return data
 
